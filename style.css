@@ -1,0 +1,11 @@
+.round {
+  width: 200;
+  height: 200;
+  border-radius: 50%;
+}
+.bgg {
+  background-color: #84d4f1;
+}
+.gone {
+  display: none;
+}

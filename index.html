@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap-icons-1.7.1/bootstrap-icons-1.7.1/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <section class="bgg ">
+      <div class="container-xl text-center pt-4 ">
+        <h2 class="">Rock Paper Scissors</h2>
+      </div>
+      <div class="container justify-content-center">
+        <!-- <div class="text-center display-3 border">SCORES</div> -->
+        <div class="row justify-content-center">
+          <div class="col-3 display-5 text-center align-self-center">
+            Player 1
+            <div class="text-center" id="p1score">0</div>
+          </div>
+          <div class="col-3 text-center">
+            <button class="btn btn-secondary mt-3" id="reset">New Game</button>
+            <!-- <button class="btn btn-outline-success mt-3">Play Again</button> -->
+            <div class="m-3">
+              <!-- <input type="number" name="" id="" class="form-control" /> -->
+              <h2>Game to : <span id="limit">10</span></h2>
+              <div class="">
+                <input type="number" class="form-control" id="input" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 display-5 text-center align-self-center">
+            Player 2
+            <div class="text-center" id="p2score">0</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container text-center border">
+        <span class="pe-5 fw-bold">lets play</span>
+        <span class="ps-5 fw-bold">Take your pick</span>
+      </div> -->
+    </section>
+    <!-- game -->
+    <section id="game">
+      <div class="container my-4">
+        <div class="row justify-content-around">
+          <div class="col-5">
+            <div class="container" id="game1">
+              <div class="row justify-content-between">
+                <!-- player 1 -->
+                <!-- selection -->
+                <div class="col-4">
+                  <div class="col-12">
+                    <img
+                      src="./asset/1.jpg"
+                      class="img-fluid round"
+                      alt=""
+                      id="s1"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <img
+                      src="./asset/2.jpg"
+                      class="img-fluid round"
+                      alt=""
+                      id="s2"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <img
+                      src="./asset/3.jpg"
+                      class="img-fluid round"
+                      alt=""
+                      id="s3"
+                    />
+                  </div>
+                </div>
+                <!-- product -->
+                <div class="col-6 justify-content-center align-self-center">
+                  <div id="p1">
+                    <img src="./asset/0.jpg" class="img-fluid round" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              col-2
+              justify-content-center
+              align-content-center
+              text-center
+              align-self-center
+            "
+          >
+            <div id="vs">
+              <h1>VS</h1>
+            </div>
+          </div>
+          <div class="col-5" id="game2">
+            <div class="container">
+              <div class="row justify-content-between">
+                <!-- product -->
+                <div class="col-6 justify-content-center align-self-center">
+                  <div id="ai">
+                    <img src="./asset/0.jpg" class="img-fluid round" alt="" />
+                  </div>
+                </div>
+                <!-- selection -->
+                <div class="col-4">
+                  <div class="col-12">
+                    <img src="./asset/1.jpg" class="img-fluid round" alt="" />
+                  </div>
+                  <div class="col-12">
+                    <img src="./asset/2.jpg" class="img-fluid round" alt="" />
+                  </div>
+                  <div class="col-12">
+                    <img src="./asset/3.jpg" class="img-fluid round" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+    <script src="bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
